@@ -1,0 +1,61 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+#navbar {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+#navbar header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+#main-doc {
+    margin-left: 270px; /* To leave space for the navbar */
+    padding: 20px;
+}
+
+.main-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.main-section header {
+    font-size: 24px;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    #navbar {
+        display: none; /* Hide the navbar on small screens */
+    }
+
+    #main-doc {
+        margin-left: 0;
+    }
+}
